@@ -19,7 +19,7 @@ return (
             <p className='text-gray-400 text-sm sm:text-base text-center max-w-xs leading-relaxed -mt-2'>Our app will accurately display current weather conditions in no time</p>
             
             <Link href="/weather" className='mt-2'>
-            <button className='font-medium text-xl mt-10 cursor-pointer bg-blue-400 px-12 py-3 rounded-3xl border border-blue-800 hover:bg-blue-500 hover:scale-105 transition-all duration-300'>
+            <button className='font-medium text-xl mt-10 cursor-pointer bg-blue-400 px-12 py-3 rounded-3xl border border-blue-800 hover:bg-blue-950 hover:scale-105 transition-all duration-300'>
                 Get Started
             </button>
             </Link>
