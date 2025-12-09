@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
 return (
     <div className='flex justify-center items-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-4'>
-        <div className='flex flex-col justify-center items-center h-[700px] gap-6 border border-blue-400 bg-gradient-to-b from-blue-950 to-gray-700 rounded-3xl p-8 sm:p-10 w-full max-w-lg'>
+        <div className='flex flex-col justify-center items-center h-[700px] gap-6 border border-blue-400 bg-gradient-to-b from-blue-700 to-gray-700 rounded-3xl p-8 sm:p-10 w-full max-w-lg'>
             <Image
             className='mb-4'
             src="/assets/logo image.png" 
