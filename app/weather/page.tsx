@@ -36,19 +36,22 @@ export default function WeatherPage() {
     };
 
     return (
-        <div className='flex justify-center items-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-4'>
-            <div className='flex flex-col justify-between items-center h-[700px] gap-4 border border-blue-400 bg-gradient-to-b from-gray-950 to-gray-700 rounded-3xl p-8 sm:p-10 w-full max-w-lg'>
+        <div className='  min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-900 to-gray-800 p-4'>
+            <div className=' flex flex-col border border-blue-400 max-w-md w-full h-full md:h-auto bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl shadow-lg p-6 space-y-6'>
                 
-                {/* 🔹 Search Bar - TOP */}
+                {/* Search Bar - TOP */}
                 <SearchBar city={city} setCity={setCity} handleSearch={handleSearch} />
 
-                {/* 🔹 Weather Card - CENTER */}
+                {/* Weather Card - CENTER */}
                 <div className="flex-1 flex items-center justify-center w-full">
                     <WeatherCard weather={weather} loading={loading} error={error} />
                 </div>
 
-                {/* 🔹 Back Button - BOTTOM */}
-                <BackBtn/>
+                {/* Back Button - BOTTOM */}
+                <div className="flex justify-center">
+                    <BackBtn />
+                </div>
+            
             </div>
         </div>
     );
