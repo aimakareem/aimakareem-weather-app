@@ -2,16 +2,18 @@
 
 import Link from "next/link"; 
 import { FaSearch } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
 
 interface SearchBarProps {
     city: string;
     setCity: (city: string) => void;
     handleSearch: () => void;
+    handleGeolocation: () => void;
 }
 
-export default function SearchBar({ city, setCity, handleSearch }: SearchBarProps) {
+export default function SearchBar({ city, setCity, handleSearch, handleGeolocation }: SearchBarProps) {
 
-    // Enter key press handler - ab ye handleSearch ko call karega
+    
     const handleKeyPress = (e: React.KeyboardEvent) => {
         if (e.key === 'Enter' && city.trim() !== '') {
             handleSearch();
@@ -40,6 +42,15 @@ export default function SearchBar({ city, setCity, handleSearch }: SearchBarProp
             >
                 <FaSearch />
                 Search
+            </button>
+        </div>
+        <div>
+            <button 
+                onClick={handleGeolocation}
+                className="bg-blue-500 font-medium text-xl px-6 py-4 flex justify-center items-center gap-2 rounded-2xl hover:bg-blue-700 hover:scale-105 transition-all duration-300 mt-4 w-full"
+            >
+                <IoLocationSharp className="text-blue-950 text-3xl font-bold"/>
+                Use My Location
             </button>
         </div>
     </div>
