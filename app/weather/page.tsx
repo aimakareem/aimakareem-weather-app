@@ -1,8 +1,9 @@
 'use client';
 import { useState, useEffect } from "react";
-import WeatherCard from "@/components/WeatherCard";
-import SearchBar from "@/components/SearchBar";
-import BackBtn from "@/components/BackBtn";
+import WeatherCard from "../../components/WeatherCard";
+import SearchBar from "../../components/SearchBar";
+import BackBtn from "../../components/BackBtn";
+
 
 export default function WeatherPage() {
     const [city, setCity] = useState('');
